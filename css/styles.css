@@ -140,8 +140,8 @@ h1 {
 }
 
 @media screen and (max-width: 426px) {
-    .shedule-container{
-        width: 70%;
+    .big-bt{
+        max-width: 70%;
     }
 }
 
@@ -203,8 +203,58 @@ h2{
 
 /* Cоц сети */
 
+.socials-section{
+    padding: 20px 0;
+    background-color: #d3b05f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.social-icons{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap;
+}
 
+.social-icon{
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    margin-right: 15px;
+    color: white;
+    width: 25%;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.social-icon img{
+    max-height: 80%;
+    z-index: 2;
+}
+
+@media screen and (max-width: 650px) {
+    .social-icons{
+        width: 90%;
+    }
+    .social-icon{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social-icon{
+        width: 80%;
+    }
+}
 /* Подвал */
 
 .footer {
@@ -253,50 +303,6 @@ h2{
 .footer p{
     font-size: 1rem;
 }
-
-.social-icons{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.social-icon{
-    height: 40px;
-    aspect-ratio: 1/1;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 1.5px solid silver;
-    /*анимация*/
-    position: relative;
-    background: none;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.social-icon img{
-    max-height: 80%;
-    z-index: 2;
-}
-
-.social-icon::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0;
-    z-index: 1;
-    transition: .5s;
-    border-radius: 50%;
-    background: linear-gradient(to bottom left, #2E3192, #1BFFFF);
-}
-.social-icon:hover:before{
-    height: 100%;
-}
-
 
 /*Бургер, подвал*/
 @media screen and (max-width: 750px){
@@ -503,52 +509,4 @@ h2{
        font-size: 1.5rem;
    }
     .social-icon{margin-right: 5px}
-}
-
-
-/* Анимации с js (появление) */
-
-.index-hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 1s;
-}
-.index-hidden:nth-child(1){
-    transition: 1s;
-}
-.index-hidden:nth-child(2){
-    transition: 1.2s;
-}
-.index-hidden:nth-child(3){
-    transition: 1.4s;
-}
-.index-hidden:nth-child(4){
-    transition: 1.6s;
-}
-.index-hidden:nth-child(5){
-    transition: 1.8s;
-}
-.index-hidden-left{
-    transform: translateX(-110%);
-}
-
-.index-show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media(prefers-reduced-motion){
-    .index-hidden{
-        transition: none;
-    }
-}
-.element_who:nth-child(2){
-    transition: all 1.5s;
-}
-.element_who:nth-child(3){
-    transition: all 2s;
-}
-.add-transition{
-    transition: 0.8s all;
 }
