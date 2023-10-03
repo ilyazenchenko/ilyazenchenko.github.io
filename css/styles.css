@@ -49,9 +49,8 @@ body {
         font-size: 1.5rem;
         font-weight: 700;
     }
-    .logo-img {
-        height: 65px;
-    }
+    
+   
 }
 
 @media screen and (max-width: 500px) {
@@ -60,6 +59,12 @@ body {
     }
     .main-title{
         letter-spacing: 3px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .main-title{
+        font-size: 2.8rem;
     }
 }
 
@@ -119,7 +124,7 @@ h1 {
     background-color: #d7c6a0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     color: rgb(249, 249, 249);
     text-align: center;
@@ -142,6 +147,18 @@ h1 {
 @media screen and (max-width: 426px) {
     .big-bt{
         max-width: 70%;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .big-bt-container{
+        height: 90px;
+    }
+    .big-bt{
+        width: 50%;
+        height: 40%;
+    }
+    .big-bt a{
+        font-size: 2rem;
     }
 }
 
@@ -198,6 +215,17 @@ h2{
         width: 90%;
         /* align-items: center; */
         text-align: center;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .rector h2{
+        font-size: 3rem;
+    }
+    .rector-info-container img{
+        height: 400px;
+    }
+    .rector-info-text{
+        font-size: 1.5rem;
     }
 }
 
@@ -257,6 +285,16 @@ h2{
         width: 80%;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .socials-section h2{
+        font-size: 2.5rem;
+    }
+    .social-icons{
+        width: 95%;
+    }
+}
+
 /* Подвал */
 
 .footer {
@@ -264,14 +302,14 @@ h2{
     background-color: #d3b05f;
     color: white;
     padding-left: 15px;
-    display: flex;
-    /*grid-template: fit-content(100%) fit-content(100%) fit-content(100%)/ 1fr 1fr 1fr 1fr;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .footer{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -434,14 +472,7 @@ h2{
 
 
 
-/*    подвал*/
-    .footer{
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .footer p{
-        grid-area: 4/1/4/3;
-    }
 }
 
 @media screen and (max-width: 670px){
@@ -465,12 +496,7 @@ h2{
     }
 
     /*    подвал*/
-    .footer{
-        grid-template-columns: 1fr;
-    }
-    .footer p{
-        grid-area: 6/1;
-    }
+    
 }
 
 @media screen and (max-width: 370px){
