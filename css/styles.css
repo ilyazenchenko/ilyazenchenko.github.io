@@ -104,6 +104,11 @@ body {
 
 /* Шапка */
 
+.cover-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
 .cover {
     background: url("/images_church/main_view.jpg") center;
     background-size: cover;
@@ -140,36 +145,10 @@ body {
     }
 }
 
-.cover-dimmer {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    text-align: center;
-}
-
-.cover-dimmer p {
-    font-size: 1.2rem;
-}
-
 h1 {
     font-size: 2.5rem;
     margin-top: -8px;
     margin-bottom: .25rem;
-}
-
-.button-cover {
-    padding: 0.7rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: transparent;
-    margin-top: 1rem;
-    border-color: white;
-    transition: background-color 0.2s ease;
-}
-
-.button-cover:hover {
-    background-color: #5bbee6;
-    cursor: pointer;
 }
 
 /* Расписание */
