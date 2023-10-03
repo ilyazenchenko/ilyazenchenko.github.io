@@ -1,13 +1,15 @@
- const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("index-show")
-            setTimeout(()=>{
-                entry.target.classList.add("add-transition");
-            },2000)
-        }
-    });
- });
+// Функция для изменения текста внутри .main-title
+function changeTitleText() {
+    const titleElement = document.querySelector('.main-title');
+    if (window.innerWidth <= 500) {
+        titleElement.innerHTML = 'Храм Рождества<br>Иоанна Предтечи';
+    }else if(window.innerWidth <= 768){
+        titleElement.textContent = 'Храм Рождества Иоанна Предтечи';
+    } else {
+        titleElement.textContent = 'Храм Рождества Иоанна Предтечи села Алеканово';
+    }
+}
 
- const hiddenElements = document.querySelectorAll('.index-hidden');
- hiddenElements.forEach((el1) => observer.observe(el1));
+// Вызываем функцию при загрузке страницы и изменении размера окна
+window.addEventListener('load', changeTitleText);
+window.addEventListener('resize', changeTitleText);
