@@ -172,32 +172,36 @@ h1 {
     cursor: pointer;
 }
 
-/* Тезисы */
+/* Расписание */
 
-.thesis_dark_bckgr {
-    background-color: #133654;
+.schedule {
+    background-color: #d7c6a0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 70px;
+    flex-direction: column;
+    padding-top: 20px;
     padding-bottom: 70px;
+    color: rgb(249, 249, 249);
+    text-align: center;
 }
 
-/* светло синий #353c57 204e75*/
-
-.thesis_light_bckgr {
-    background-color: #0e5d91;
-    display: flex;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    justify-content: space-between;
+.schedule img {
+    width: 80%;
+    padding-top: 10px;
 }
 
-h2 {
-    color: white;
-    font-size: 2.2rem;
-    padding: 1rem;
+@media screen and (max-width: 900px) {
+    .schedule img {
+        width: 110%;
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .schedule img {
+        width: 115%;
+        margin-left: -7.5%;
+    }
 }
 
 p {
