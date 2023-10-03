@@ -115,7 +115,7 @@ h1 {
 
 /* Расписание */
 
-.schedule-section {
+.big-bt-container {
     background-color: #d7c6a0;
     display: flex;
     align-items: center;
@@ -126,7 +126,7 @@ h1 {
     padding: 20px;
 }
 
-.shedule-container{
+.big-bt{
     background-color: #d3b05f;
     padding: 10px 20px;
     border-radius: 15px;
@@ -134,24 +134,16 @@ h1 {
 
 }
 
-.schedule img {
-    width: 80%;
-    padding-top: 10px;
+.big-bt a{
+    color: white;
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
-    .schedule img {
-        width: 110%;
-        margin-left: -5%;
+@media screen and (max-width: 426px) {
+    .shedule-container{
+        width: 70%;
     }
 }
-@media screen and (max-width: 500px) {
-    .schedule img {
-        width: 115%;
-        margin-left: -7.5%;
-    }
-}
-
 
 /* Настоятель */
 
@@ -188,7 +180,6 @@ h2{
     width: 60%;
     display: flex;
     flex-direction: column;
-
     justify-content: space-around;
     color: rgb(249, 249, 249);
     height: 100%;
@@ -205,8 +196,14 @@ h2{
     .rector-info-text{
         padding-top: 10px;
         width: 90%;
+        /* align-items: center; */
+        text-align: center;
     }
 }
+
+/* Cоц сети */
+
+
 
 /* Подвал */
 
